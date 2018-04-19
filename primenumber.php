@@ -27,4 +27,4 @@ function isPrime($number){
 echo $checkIsPrime;					//step 5-> display the result.
 
 
-
+//This is done by lennovo
