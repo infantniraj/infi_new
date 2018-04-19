@@ -1,0 +1,89 @@
+<html>
+<script>
+var name='Infant Niraj';
+String.prototype.reversed= function() {
+ var r='';
+ alert(this);
+ for(var i=this.length-1;i>=0; i--){
+	r+=this[i];
+ }
+ return r;
+};
+alert(name.reversed());
+
+exit;
+function Person(first, last) {
+  this.first = first;
+  this.last = last;
+}
+Person.prototype.fullName = function() {
+  return this.first + ' ' + this.last;
+};
+Person.prototype.fullNameReversed = function() {
+  return this.last + ', ' + this.first;
+};
+
+
+s = new Person('Simon', 'Willison');
+//s.firstNameCaps(); // TypeError on line 1: s.firstNameCaps is not a function
+
+Person.prototype.firstNameCaps = function() {
+  return this.first.toUpperCase();
+};
+
+Person.prototype.fullAndRev =function(){
+ return this.fullName()+'and '+this.fullNameReversed();
+};
+s.firstNameCaps(); // "SIMON"
+alert(s.fullAndRev());
+
+exit;
+
+function avg(arr) {
+  var sum = 0;
+  for (var i = 0, j = arr.length; i < j; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+}
+
+function sum(arg){
+var sum=0;
+var arguments='test';
+	for(var i=0, j=arg.length; j>i; i++){
+		sum+=arr[i];
+	}
+	return sum;
+}
+
+tes=sum([1,2,3]);
+alert(tes);
+exit;
+
+tes=avg([2, 3, 4, 5]); // 3.5
+alert(tes);
+exit;
+a=['dog', 'cat', 'hen'];
+a.unshift('dog'['catnew']);
+alert(a.shift());
+exit;
+a.push('cjiken');
+var details={
+'name': 'inif',
+'age' : 21,
+'address' : 'test'
+};
+a.forEach(function(currentValue, index, array) {
+  // Do something with currentValue or array[index]
+  alert(currentValue.toUpperCase()); // 5
+
+});
+for(detail in details){
+alert(detail);
+}
+</script>
+
+<body>
+<h1>te</h1>
+</body>
+</html>
