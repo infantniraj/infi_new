@@ -25,6 +25,3 @@ function isPrime($number){
 	return 1;
 }
 echo $checkIsPrime;					//step 5-> display the result.
-
-
-//This is done by lennovo
